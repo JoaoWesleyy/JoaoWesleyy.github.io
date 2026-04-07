@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  background: #121214;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid #f48c06;
+}
+
+main {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto auto;
+}
+
+.menu-hb {
+  display: none;
+}
+
+.header-menu,
+a {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 50px;
+  color: #ffffff;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-menu a {
+  padding: 16px 0px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 0px;
+  font-size: 2rem;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto auto;
+  color: #ffffff;
+}
+
+.conteudo img {
+  max-width: 100%;
+  width: 450px;
+  height: 600px;
+}
+
+.descricao-p1 {
+  text-align: start;
+  padding: 0px;
+  margin-top: 0px;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.p1 {
+  color: #f48c06;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.p2 {
+  color: #f48c06;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 60px;
+  font-style: italic;
+}
+
+.nome-joao {
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #121214;
+    padding: 20px;
+    gap: 0;
+  }
+
+  .header-menu.aberto {
+    display: flex;
+    padding: 0px;
+  }
+
+  .header-menu li {
+    display: block;
+    border-bottom: 1px solid #f48c06;
+    padding: 12px 10px;
+  }
+
+  header {
+    border-bottom: 1px solid #f48c06;
+    position: relative;
+  }
+
+  .header-menu li {
+    display: none;
+  }
+
+  .menu-hb {
+    display: flex !important;
+  }
+
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo,
+  nome-joao,
+  .p2 {
+    text-align: center;
+    line-height: 60px;
+  }
+  .descricao-p1 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .fotoIA {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-menu li {
+    display: none;
+  }
+
+  .header-menu.aberto li {
+    display: block;
+  }
+}
+
+@media (max-width: 490px) {
+  .fotoIA {
+    object-fit: cover;
+    object-position: top;
+  }
+}

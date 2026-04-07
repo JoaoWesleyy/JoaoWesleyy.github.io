@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./contatos.css">
+  <title>Portfolio - Contatos</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <a href="../index.html">
+        <p class="logo">João Wesley</p>
+      </a>
+      <nav aria-labelledby="primaria">
+        <img class="menu-hb" src="/contatos/menu.svg" alt="">
+        <ul class="header-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../sobre/sobre.html">Sobre mim</a></li>
+          <li><a href="../habilidades/habilidades.html">Habilidades</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="conteudo-ct">
+      <div>
+        <h1 class="titulo-ct">Contatos</h1>
+      </div>
+    </article>
+
+    <article>
+      <div class="descricao-ct">
+        <a href="https://github.com/JoaoWesleyy">
+          <img src="/github.png" alt="">
+        </a>
+        <a href="https://www.instagram.com/joao_gonc4lo/">
+          <img src="/icons8-instagram.svg" alt="">
+        </a>
+        <a href="">
+          <img src="/whatsapp.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-wesley-92a392357/">
+          <img src="/icons8-linkedin.svg" alt="">
+        </a>
+      </div>
+    </article>
+
+    <div class="titulo-curriculo">
+      <h2>Receba meu curriculo em seu email ou Whatsapp</h2>
+      <p class="pos-form">Preencha os campos abaixo:</p>
+    </div>
+    <article>
+      <div class="formulario">
+        <form action="/" method="POST"></form>
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" />
+        </div>
+        <div class="form-group">
+          <label for="numero">Número</label>
+          <input type="number" id="numero" name="numero" placeholder="(62) 99999-9999" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" />
+        </div>
+        <button class="botao" id="btn-whatsapp" type="button">Whatsapp</button>
+        <button class="botao" id="btn-email" type="button">Email</button>
+      </div>
+    </article>
+
+  </main>
+</body>
+
+<script>
+  const menu = document.querySelector(".menu-hb")
+  const nav = document.querySelector(".header-menu")
+
+  menu.addEventListener('click', abrirMenu)
+
+  function abrirMenu() {
+    nav.classList.toggle('aberto')
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>emailjs.init("LVMXmN-KaJz2Iunkq")</script>
+<script src="./contatos.js"></script>
+
+</html>

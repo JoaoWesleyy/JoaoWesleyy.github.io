@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  background: #121214;
+  overflow: hiddens;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 1px solid #f48c06;
+}
+
+main {
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto auto;
+}
+
+.menu-hb {
+  display: none;
+}
+
+.header-menu,
+a {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 50px;
+  color: #ffffff;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header-menu a {
+  padding: 16px 0px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 90px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0px;
+  max-width: 1200px;
+  margin: auto auto;
+  color: #ffffff;
+}
+
+.sobre-mim {
+  font-weight: 750;
+  font-size: 5rem;
+  margin: 0px;
+  position: absolute;
+}
+
+.sobre-mim span {
+  color: #f48c06;
+}
+
+.bg-sobre {
+  position: relative;
+  top: 30px;
+  left: 0;
+  font-size: 5rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+  user-select: none;
+}
+
+.descricao-mim {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.list-mim {
+  list-style: none;
+  padding: 0;
+  font-weight: 400;
+}
+
+.list-mim li {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  padding: 10px 0;
+}
+
+.list-mim li span {
+  font-weight: 700;
+  min-width: 300px;
+  color: #f48c06;
+}
+
+.list-mim a {
+  gap: 0px;
+}
+
+.fotoIA {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  header {
+    position: relative;
+  }
+
+  .menu-hb {
+    display: block !important;
+    cursor: pointer;
+  }
+
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #121214;
+    padding: 0px;
+    gap: 0;
+    z-index: 99;
+  }
+
+  .header-menu.aberto {
+    display: flex;
+  }
+
+  .header-menu li {
+    display: block;
+    border-bottom: 1px solid #f48c06;
+    padding: 12px 10px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sobre-mim {
+    font-size: 3rem;
+    position: relative;
+  }
+
+  .bg-sobre {
+    font-size: 3rem;
+    top: -60px;
+  }
+
+  .descricao-mim {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+
+  .list-mim {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .list-mim a {
+    display: block;
+    margin-top: 0px;
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .list-mim li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-mim li span {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 490px) {
+  .fotoIA {
+    object-fit: cover;
+    object-position: top;
+  }
+}

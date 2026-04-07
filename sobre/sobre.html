@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./sobre.css">
+  <title>Portfolio - Contatos</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="../index.html">
+        <p class="logo">João Wesley</p>
+      </a>
+      <nav aria-labelledby="primaria">
+        <img class="menu-hb" src="./assets/images/menu.svg" alt="">
+        <ul class="header-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../habilidades/habilidades.html">Habilidades</a></li>
+          <li><a href="../contatos/contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="conteudo">
+      <img class="fotoIA" src="/joaoIA.png" alt="joaoIA">
+      <div class="sobre">
+        <h1 class="sobre-mim">Sobre <span>mim</span></h1>
+        <span class="bg-sobre">Sobre mim</span>
+        <p class="descricao-mim">"Iniciante em tecnologia com sólida base militar, priorizando sempre a pontualidade e o compromisso com prazos. Busco minha primeira oportunidade para aplicar minha disciplina e dedicação no aprendizado constante de novas ferramentas e processos."</p>
+        <ul class="list-mim">
+          <li><span>Nome:</span> João Wesley Almeida Gonçalo dos Santos</li>
+          <li><span>Data de Aniversário:</span> 06/06/2002</li>
+          <li><span>Endereço:</span> R. Arruda Fontes Cabral, Agenor de Carvalho, 687</li>
+          <li>
+            <a href="https://mail.google.com/mail/?view=cm&to=joawesley061@gmail.com" target="_blank"><span>Email: </span>joawesley061@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</body>
+
+<script>
+  const menu = document.querySelector(".menu-hb")
+  const nav = document.querySelector(".header-menu")
+
+  menu.addEventListener('click', abrirMenu)
+
+  function abrirMenu() {
+    nav.classList.toggle('aberto')
+  }
+</script>
+
+</html>

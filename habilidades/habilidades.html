@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./habilidades.css">
+  <title>Portfólio - Habilidades</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <a href="../index.html">
+        <p class="logo">João Wesley</p>
+      </a>
+      <nav aria-labelledby="primaria">
+        <img class="menu-hb" src="./assets/images/menu.svg" alt="">
+        <ul class="header-menu">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../sobre/sobre.html">Sobre mim</a></li>
+          <li><a href="../contatos/contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="minhas-habilidades">
+      <div class="mh">
+        <h1 class="titulo-mh">Minhas <span>habilidades</span></h1>
+        <p class="descricao-mh">"Iniciando na área de tecnologia com base em lógica de programação e desenvolvimento web. Trago comigo disciplina e responsabilidade adquiridas em experiências militares."</p>
+      </div>
+    </article>
+    <article>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-info">
+            <span>HTML e JavaScript</span>
+            <span>60%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progresso" style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>Análise e Des. de Sistemas</span>
+            <span>10%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progresso" style="width: 10%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-info">
+            <span>Lógica de Programação</span>
+            <span>100%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progresso" style="width: 100%"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+
+<script>
+  const menu = document.querySelector(".menu-hb")
+  const nav = document.querySelector(".header-menu")
+
+  menu.addEventListener('click', abrirMenu)
+
+  function abrirMenu() {
+    nav.classList.toggle('aberto')
+  }
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio - João Wesley</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="header">
+      <a href="./index.html">
+        <p class="logo">João Wesley</p>
+      </a>
+      <nav aria-labelledby="primaria">
+        <img class="menu-hb" src="./assets/images/menu.svg" alt="">
+        <ul class="header-menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./sobre/sobre.html">Sobre mim</a></li>
+          <li><a href="./habilidades/habilidades.html">Habilidades</a></li>
+          <li><a href="./contatos/contatos.html">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="conteudo">
+      <div class="descricao">
+        <span class="p1">Olá</span>
+        <h1 class="nome-joao">Sou <span class="p2">João Wesley</span></h1>
+        <p class="descricao-p1">Iniciando na Programação</p>
+      </div>
+      <img class="fotoIA" src="joaoIA.png" alt="João Wesley">
+    </article>
+  </main>
+</body>
+
+<script>
+  const menu = document.querySelector(".menu-hb")
+  const nav = document.querySelector(".header-menu")
+
+  menu.addEventListener('click', abrirMenu)
+
+  function abrirMenu() {
+    nav.classList.toggle('aberto')
+  }
+</script>
+
+</html>
