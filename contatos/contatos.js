@@ -34,6 +34,6 @@ btnWhatsapp.addEventListener("click", function () {
   }
 
   const mensagem = `Olá! Meu nome é ${nome}, gostaria de receber seu currículo.`;
-  const link = `https://wa.me/556299636196?text=${encodeURIComponent(mensagem)}`;
+  const link = `https://wa.me/5562996361963?text=${encodeURIComponent(mensagem)}`;
   window.open(link, "_blank");
 });
