@@ -1,5 +1,18 @@
 const btnEmail = document.getElementById("btn-email");
 
+const inputNumero = document.getElementById("numero");
+
+inputNumero.addEventListener("input", function () {
+  let v = this.value.replace(/\D/g, "");
+
+  if (v.length <= 11) {
+    v = v.replace(/^(\d{2})(\d)/, "($1) $2");
+    v = v.replace(/(\d{5})(\d{4})$/, "$1-$2");
+  }
+
+  this.value = v;
+});
+
 btnEmail.addEventListener("click", function () {
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
